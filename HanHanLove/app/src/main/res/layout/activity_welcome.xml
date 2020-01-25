@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <com.hanhanlove.widget.AnimationTextView
+        android:id="@+id/tvWelcomeGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp17"
+        android:textColor="#343434"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp32"
+        android:layout_above="@id/tvWelcomeText"/>
+
+    <com.hanhanlove.widget.AnimationTextView
+        android:id="@+id/tvWelcomeText"
+        android:layout_width="@dimen/dp140"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="start|center"
+        android:textSize="@dimen/dp19"
+        android:textColor="#343434"/>
+
+    <com.hanhanlove.widget.AnimationTextView
+        android:id="@+id/tvWelcomeOk"
+        android:layout_width="@dimen/dp52"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWelcomeText"
+        android:gravity="center"
+        android:text="OK"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp32"
+        android:layout_marginEnd="@dimen/dp24"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/dp18"
+        android:background="@drawable/background_welcome_ok"
+        android:textColor="#0F1429"/>
+
+</RelativeLayout>

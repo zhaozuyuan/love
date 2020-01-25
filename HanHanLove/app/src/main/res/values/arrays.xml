@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="photoAlbum1">
+        <item>@drawable/photo1</item>
+        <item>@drawable/photo2</item>
+        <item>@drawable/photo3</item>
+        <item>@drawable/photo4</item>
+        <item>@drawable/photo6</item>
+        <item>@drawable/photo7</item>
+        <item>@drawable/photo8</item>
+        <item>@drawable/photo9</item>
+    </array>
+</resources>
