@@ -17,12 +17,69 @@
             android:layout_height="match_parent"
             android:layout_centerInParent="true" >
 
-            <com.hanhanlove.widget.PhotoAlbum1
+            <com.hanhanlove.album.a1.PhotoAlbum1
                 android:id="@+id/paPhoto1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:photo_album="@{R.array.photoAlbum1}" />
+                />
         </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/ivMusic"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp35"
+            android:src="@drawable/ic_music2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dp34"
+            android:layout_marginEnd="@dimen/dp18"/>
+
+        <TextView
+            android:id="@+id/tvTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp12"
+            android:textColor="#646464"
+            android:layout_marginTop="@dimen/dp36"
+            android:layout_marginStart="@dimen/dp12"
+            />
+
+
+        <TextView
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp34"
+            android:text="下一页"
+            android:textStyle="bold"
+            android:textColor="#6D9FCA"
+            android:gravity="center"
+            android:clickable="true"
+            android:id="@+id/tvGoVoice"
+            android:translationZ="@dimen/dp0_8"
+            android:layout_marginEnd="@dimen/dp12"
+            android:layout_marginBottom="@dimen/dp12"
+            android:background="@drawable/background_btn_next"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/tvStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp24"
+            android:textStyle="bold"
+            android:textColor="#6D9FCA"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/dp40" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_album"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:translationZ="@dimen/dp1_0"/>
 
     </RelativeLayout>
 

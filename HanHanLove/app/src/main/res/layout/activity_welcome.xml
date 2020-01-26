@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".WelcomeActivity">
 
+    <ImageView
+        android:id="@+id/ivSetting"
+        android:layout_width="@dimen/dp26"
+        android:layout_height="@dimen/dp26"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_setting"
+        android:clickable="true"
+        android:layout_marginEnd="@dimen/dp26"
+        android:layout_marginTop="@dimen/dp48"/>
+
     <com.hanhanlove.widget.AnimationTextView
         android:id="@+id/tvWelcomeGuide"
         android:layout_width="wrap_content"
@@ -22,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:gravity="start|center"
-        android:textSize="@dimen/dp19"
+        android:textSize="@dimen/dp20"
         android:textColor="#343434"/>
 
     <com.hanhanlove.widget.AnimationTextView
@@ -39,5 +50,14 @@
         android:textSize="@dimen/dp18"
         android:background="@drawable/background_welcome_ok"
         android:textColor="#0F1429"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/top_album"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:translationZ="@dimen/dp1_0"/>
 
 </RelativeLayout>

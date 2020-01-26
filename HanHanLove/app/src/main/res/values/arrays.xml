@@ -1,13 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <array name="photoAlbum1">
-        <item>@drawable/photo1</item>
-        <item>@drawable/photo2</item>
-        <item>@drawable/photo3</item>
-        <item>@drawable/photo4</item>
-        <item>@drawable/photo6</item>
-        <item>@drawable/photo7</item>
-        <item>@drawable/photo8</item>
-        <item>@drawable/photo9</item>
+    <array name="album1">
+        <item>@drawable/im1</item>
+        <item>@drawable/im2</item>
+        <item>@drawable/im3</item>
+        <item>@drawable/im4</item>
+        <item>@drawable/im5</item>
+        <item>@drawable/im6</item>
+        <item>@drawable/im7</item>
+        <item>@drawable/im8</item>
+        <item>@drawable/im9</item>
+    </array>
+    <array name="album2">
+        <item>@drawable/im21</item>
+        <item>@drawable/im22</item>
+        <item>@drawable/im23</item>
+        <item>@drawable/im24</item>
+        <item>@drawable/im25</item>
+        <item>@drawable/im26</item>
+        <item>@drawable/im27</item>
+        <item>@drawable/im28</item>
+        <item>@drawable/im29</item>
+        <item>@drawable/im30</item>
+    </array>
+    <array name="album3">
+        <item>@drawable/im41</item>
+        <item>@drawable/im42</item>
+        <item>@drawable/im43</item>
+        <item>@drawable/im44</item>
+        <item>@drawable/im45</item>
+        <item>@drawable/im46</item>
+        <item>@drawable/im47</item>
+        <item>@drawable/im48</item>
+        <item>@drawable/im49</item>
+        <item>@drawable/im50</item>
     </array>
 </resources>

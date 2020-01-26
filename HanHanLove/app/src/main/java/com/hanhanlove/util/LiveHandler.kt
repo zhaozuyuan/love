@@ -16,9 +16,11 @@ object LiveHandler {
     private val handler = Handler(Looper.getMainLooper())
 
     /*默认在onStop时移除任务，可选OnDestroy时移除*/
-    fun safePost(lifecycle: Lifecycle,
-                 task: Runnable,
-                 rmOnDestroy: Boolean = false) {
+    fun safePost(
+        lifecycle: Lifecycle,
+        task: Runnable,
+        rmOnDestroy: Boolean = false
+    ) {
         handler.post(task)
         if (rmOnDestroy) {
             initObserver(lifecycle, LiveObserverOnDestroy(handler, task))
@@ -27,9 +29,11 @@ object LiveHandler {
         }
     }
 
-    fun safePostDelay(lifecycle: Lifecycle,
-                      task: Runnable, delay: Long,
-                      rmOnDestroy: Boolean = false) {
+    fun safePostDelay(
+        lifecycle: Lifecycle,
+        task: Runnable, delay: Long,
+        rmOnDestroy: Boolean = false
+    ) {
         handler.postDelayed(task, delay)
         if (rmOnDestroy) {
             initObserver(lifecycle, LiveObserverOnDestroy(handler, task))
@@ -38,13 +42,15 @@ object LiveHandler {
         }
     }
 
-    private fun initObserver(lifecycle: Lifecycle,
-                             observer: LifecycleObserver) {
+    private fun initObserver(
+        lifecycle: Lifecycle,
+        observer: LifecycleObserver
+    ) {
         lifecycle.addObserver(observer)
     }
 
-    class LiveObserverOnStop(private val handler: Handler, private val task: Runnable)
-        : LifecycleObserver {
+    class LiveObserverOnStop(private val handler: Handler, private val task: Runnable) :
+        LifecycleObserver {
 
         @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
         fun clearTask() {
@@ -52,8 +58,8 @@ object LiveHandler {
         }
     }
 
-    class LiveObserverOnDestroy(private val handler: Handler, private val task: Runnable)
-        : LifecycleObserver {
+    class LiveObserverOnDestroy(private val handler: Handler, private val task: Runnable) :
+        LifecycleObserver {
 
         @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
         fun clearTask() {

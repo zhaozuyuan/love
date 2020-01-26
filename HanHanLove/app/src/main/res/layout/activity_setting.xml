@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择相册："
+        android:textSize="@dimen/dp16"
+        android:textColor="#343434"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp42"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp32">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="专集最美的相册"
+            android:textColor="#646464"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dp14"/>
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp32">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新最美的相册"
+            android:textColor="#646464"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dp14"/>
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp32">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="历史最美的相册"
+            android:textColor="#646464"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dp14"/>
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0_8"
+        android:background="#26008577"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginStart="@dimen/dp54"
+        android:layout_marginEnd="@dimen/dp54"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎页文字效果："
+        android:textSize="@dimen/dp16"
+        android:textColor="#343434"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp14"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp32">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加快的加载速度"
+            android:textColor="#646464"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dp14"/>
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp32">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正常的加载速度"
+            android:textColor="#646464"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dp14"/>
+
+        <RadioButton
+            android:id="@+id/rb5"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp32">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭加载效果"
+            android:textColor="#646464"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dp14"/>
+
+        <RadioButton
+            android:id="@+id/rb6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp20"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0_8"
+        android:background="#26008577"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginStart="@dimen/dp54"
+        android:layout_marginEnd="@dimen/dp54"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="相册页展示效果："
+        android:textSize="@dimen/dp16"
+        android:textColor="#343434"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp14"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp32">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启进入倒计时"
+            android:textColor="#646464"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dp14"/>
+
+        <RadioButton
+            android:id="@+id/rb7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp32">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭进入倒计时"
+            android:textColor="#646464"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dp14"/>
+
+        <RadioButton
+            android:id="@+id/rb8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"/>
+    </LinearLayout>
+
+</LinearLayout>

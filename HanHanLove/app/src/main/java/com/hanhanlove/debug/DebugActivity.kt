@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.util.Log
 import com.hanhanlove.PhotoActivity
 import com.hanhanlove.R
+import com.hanhanlove.VoiceActivity
 import com.hanhanlove.WelcomeActivity
 import com.hanhanlove.util.LiveHandler
 import kotlinx.android.synthetic.main.debug_activity.*
@@ -26,6 +27,10 @@ class DebugActivity : AppCompatActivity() {
 
         btnDebugPhoto.setOnClickListener {
             startActivity(Intent(baseContext, PhotoActivity::class.java))
+        }
+
+        btnDebugVoice.setOnClickListener {
+            startActivity(Intent(baseContext, VoiceActivity::class.java))
         }
     }
 }
